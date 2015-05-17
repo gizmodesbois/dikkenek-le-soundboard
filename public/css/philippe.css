@@ -1,0 +1,61 @@
+* {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+}
+
+html {
+  background: url('../img/pattern.png') #ae903c;
+}
+
+.page-content {
+  width: 90%;
+  margin: auto;
+}
+
+.page-title {
+  margin: 2.5em 0 4em 0;
+  text-align: center;
+}
+
+.page-title img {
+  border: 2px dotted #873C11;
+  border-radius: 50%;
+  width: 200px;
+}
+
+.page-title h1 {
+  border-bottom: 1px solid #873C11;
+  color: #873C11;
+  font-size: 3em;
+  margin-top: 0;
+  padding-bottom: .5em;
+}
+
+.words {
+  list-style-type: none;
+  margin: 2em 0;
+  text-align: center;
+}
+
+.words li {
+  background: #873C11;
+  border: 1px solid #873C11;
+  color: #fff;
+  display: inline-block;
+  height: 2.3em;
+  line-height: 2.3em;
+  margin: 0 2em 2em 0;
+  min-width: 370px;
+  text-align: left;
+}
+
+.words li strong {
+  background: #fff;
+  color: #873C11;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: .5em;
+  height: 100%;
+  width: 30px;
+  text-align: center;
+}
