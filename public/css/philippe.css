@@ -12,7 +12,7 @@ html {
 }
 
 .page-title {
-  margin: 2.5em 0 4em 0;
+  margin: 2.5em 0 0 0;
   text-align: center;
 }
 
@@ -23,11 +23,15 @@ html {
 }
 
 .page-title h1 {
-  border-bottom: 1px solid #873C11;
   color: #873C11;
   font-size: 3em;
-  margin-top: 0;
-  padding-bottom: .5em;
+  margin: 0;
+}
+
+.ofc {
+  color: #87713b;
+  margin: 0 0 2em 0;
+  text-align: center;
 }
 
 .words {
