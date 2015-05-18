@@ -18,6 +18,7 @@
           rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/philippe.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
     <script src="js/philippe.js"></script>
   </head>
   <body class="page-content">
@@ -25,47 +26,48 @@
       <img src="img/mike.jpg" alt="Mike"/>
       <h1>Hitman le Soundboard</h1>
     </header>
-    <h2 class="ofc">Appuie sur la touche de ton clavier pour entendre la phrase.</h2>
+    <h2 class="ofc keyboard">Appuie sur la touche de ton clavier pour entendre la phrase.</h2>
+    <h2 class="ofc finger">Appuie sur une des phrases pour l'entendre.</h2>
     <ul class="words">
-      <li>
+      <li data-sound="petit-con">
         <strong>C</strong>
-        Je vais te tuer petit con!
+        <span class="words-text">Je vais te tuer petit con!</span
       </li>
-      <li>
+      <li data-sound="sale-encule">
         <strong>E</strong>
-        Viens ici sale enculé!
+        <span class="words-text">Viens ici sale enculé!</span
       </li>
-      <li>
+      <li data-sound="mon-frere">
         <strong>F</strong>
-        Mon frère... Je te vengerai!
+        <span class="words-text">Mon frère... Je te vengerai!</span
       </li>
-      <li>
+      <li data-sound="je-sais">
         <strong>J</strong>
-        Je sais où tu te caches!
+        <span class="words-text">Je sais où tu te caches!</span
       </li>
-      <li>
+      <li data-sound="mourir-connard">
         <strong>M</strong>
-        C'est toi qui va mourir connard!
+        <span class="words-text">C'est toi qui va mourir connard!</span
       </li>
-      <li>
+      <li data-sound="philippe">
         <strong>P</strong>
-        Philippe!
+        <span class="words-text">Philippe!</span
       </li>
-      <li>
+      <li data-sound="salaud">
         <strong>S</strong>
-        Salaud!
+        <span class="words-text">Salaud!</span
       </li>
-      <li>
+      <li data-sound="viens-ici">
         <strong>V</strong>
-        Viens ici que je te bute enculé!
+        <span class="words-text">Viens ici que je te bute enculé!</span
       </li>
-      <li>
+      <li data-sound="ta-gueule">
         <strong>T</strong>
-        Ta gueule!
+        <span class="words-text">Ta gueule!</span
       </li>
-      <li>
+      <li data-sound="vas-y">
         <strong>Y</strong>
-        Vas-y!
+        <span class="words-text">Vas-y!</span
       </li>
     </ul>
     <script>

@@ -24,20 +24,23 @@ html {
 
 .page-title h1 {
   color: #873C11;
-  font-size: 3em;
+  font-size: 2.4em;
   margin: 0;
+  padding-bottom: .4rem;
 }
 
 .ofc {
   color: #87713b;
   margin: 0 0 2em 0;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 .words {
   list-style-type: none;
-  margin: 2em 0;
+  margin: 2em 0 0;
   text-align: center;
+  padding:0;
 }
 
 .words li {
@@ -47,9 +50,15 @@ html {
   display: inline-block;
   height: 2.3em;
   line-height: 2.3em;
-  margin: 0 2em 2em 0;
-  min-width: 370px;
+  margin: 0 0 2em 0;
+  width: 100%;
   text-align: left;
+}
+
+.touch .words li
+{
+  height: 2.6em;
+  line-height: 2.6em;
 }
 
 .words li strong {
@@ -57,9 +66,53 @@ html {
   color: #873C11;
   font-size: 1.2em;
   font-weight: bold;
-  display: inline-block;
   margin-right: .5em;
   height: 100%;
   width: 30px;
   text-align: center;
+  display:none;
+}
+
+.no-touch .words li strong {
+  display: inline-block;
+}
+
+.keyboard, .finger
+{
+  display: none;
+}
+
+.no-touch .keyboard
+{
+  display: block;
+}
+
+.touch .finger
+{
+  display: block;
+}
+
+.words-text
+{
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .words li{
+    width: 46%;
+    margin-left:1%;
+    margin-right:1%;
+  }
+  .page-title h1 {
+    font-size: 3em;
+  }
+  .ofc {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .words li{
+    width: 370px;
+  }
 }

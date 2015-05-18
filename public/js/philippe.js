@@ -23,3 +23,11 @@ $(document).on('keydown', function (e) {
   var audio = new Audio(file);
   audio.play();
 });
+
+$(document).ready(function(){
+  $('li').on('touchstart', function(){
+    var file = $(this).attr('data-sound');
+    var audio = new Audio('ogg/' + file + '.ogg');
+    audio.play();
+  });
+});
