@@ -32,7 +32,7 @@ $(document).on('keydown', function (e) {
 });
 
 $(document).ready(function(){
-  $('li').on('touchstart', function(){
+  $('li').on('click', function(){
     var file = $(this).attr('data-sound');
     var audio = new Audio(fileFormat + '/' + file + '.' + fileFormat);
     audio.play();
