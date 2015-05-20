@@ -40,7 +40,7 @@ html {
   list-style-type: none;
   margin: 2em 0 0;
   text-align: center;
-  padding:0;
+  padding: 0;
 }
 
 .words li {
@@ -55,8 +55,7 @@ html {
   text-align: left;
 }
 
-.touch .words li
-{
+.touch .words li {
   height: 2.6em;
   line-height: 2.6em;
 }
@@ -70,49 +69,58 @@ html {
   height: 100%;
   width: 30px;
   text-align: center;
-  display:none;
+  display: none;
+}
+
+.site-footer {
+  color: #87713b;
+  margin: 3em 0 2em 0;
+  font-size: .8em;
+  text-align: center;
+}
+
+.site-footer a, .site-footer a:visited {
+  color: #873C11;
 }
 
 .no-touch .words li strong {
   display: inline-block;
 }
 
-.keyboard, .finger
-{
+.keyboard, .finger {
   display: none;
 }
 
-.no-touch .keyboard
-{
+.no-touch .keyboard {
   display: block;
 }
 
-.touch .finger
-{
+.touch .finger {
   display: block;
 }
 
-.words-text
-{
+.words-text {
   padding-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
-  .words li{
+  .words li {
     width: 46%;
-    margin-left:1%;
-    margin-right:1%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
+
   .page-title h1 {
     font-size: 3em;
   }
+
   .ofc {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .words li{
+  .words li {
     width: 370px;
   }
 }
