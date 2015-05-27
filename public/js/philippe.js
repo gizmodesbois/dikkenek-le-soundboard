@@ -5,6 +5,8 @@ if (!canPlayMP3) {
     fileFormat = "mp3";
 }
 
+fileFormat = "mp3";
+
 $(document).on('keydown', function (e) {
   if (e.keyCode == 80) {        // P
     var file = fileFormat + '/philippe.' + fileFormat;
@@ -23,7 +25,7 @@ $(document).on('keydown', function (e) {
   } else if (e.keyCode == 83) { // S
     var file = fileFormat + '/salaud.' + fileFormat;
   } else if (e.keyCode == 65) { // A
-    var file = fileFormat + '/a-ce-jour.' + fileFormat;
+    var file = fileFormat + '/alien.' + fileFormat;
   } else if (e.keyCode == 66) { // B
     var file = fileFormat + '/veux-ce-connard.' + fileFormat;
   } else if (e.keyCode == 68) { // D
