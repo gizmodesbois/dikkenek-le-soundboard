@@ -5,8 +5,6 @@ if (!canPlayMP3) {
     fileFormat = "mp3";
 }
 
-fileFormat = "mp3";
-
 $(document).ready(function(){
   $('li').on('click', function(){
     var file = $(this).attr('data-sound');
