@@ -6,7 +6,7 @@ if (!canPlayMP3) {
 }
 
 $(document).ready(function(){
-  $('li').on('click', function(){
+  $('[data-sound]').on('click', function(){
     var file = $(this).attr('data-sound');
     var audio = new Audio(fileFormat + '/' + file + '.' + fileFormat);
     audio.play();
@@ -20,5 +20,35 @@ $(document).ready(function(){
         audio.play();
     });
   });
+
+    $('.social-share').each(function(){
+        var $shareButton = $(this);
+        var $soundableElem = $shareButton.parent().find('[data-sound]');
+        var file = $soundableElem.attr('data-sound');
+
+
+        var baseUrl = window.location.href;
+        var audioPath = fileFormat + '/' + file + '.' + fileFormat;
+        var audioURL =  baseUrl + audioPath;
+
+
+        var options = {
+
+            twitter: {
+                text:  "#dikkenek Je n'ai qu'une chose à dire ! ",
+                via: 'henrottesimon'
+            },
+
+            facebook : {
+                image: baseUrl + 'img/claudy.jpg'
+            },
+        };
+
+        $shareButton.shareButtons(audioURL, options);
+
+    });
+
+
+
 
 });
