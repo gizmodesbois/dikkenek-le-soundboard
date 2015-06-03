@@ -87,6 +87,10 @@ html {
   color: #f39c12;
 }
 
+.site-footer .network {
+  margin: 1.25em 0;
+}
+
 .no-touch .words li strong {
   display: inline-block;
 }
@@ -129,13 +133,11 @@ html {
   }
 }
 
-.social-network
-{
+.social-network {
   width: 180px;
   margin: 0 auto;
 }
 
-.fb-share-button
-{
+.fb-share-button {
   padding-right: 10px;
 }
